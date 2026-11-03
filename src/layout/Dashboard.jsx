@@ -43,6 +43,18 @@ function Dashboard() {
                         <span>useEffect</span>
                     </NavLink>
 
+                    <NavLink
+                        to="/custom-hook"
+                        className={({ isActive }) =>
+                            isActive
+                                ? "group flex min-w-max items-center gap-3 rounded-2xl border border-cyan-200/20 bg-gradient-to-r from-cyan-300/15 to-indigo-400/10 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-950/20 transition-all duration-300"
+                                : "group flex min-w-max items-center gap-3 rounded-2xl border border-transparent px-4 py-3 text-sm text-slate-400 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.06] hover:text-white"
+                        }
+                    >
+                        <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-white/10 text-xs text-cyan-200">03</span>
+                        <span>Custom Hook</span>
+                    </NavLink>
+
                 </nav>
 
             </aside>
