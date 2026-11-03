@@ -4,6 +4,8 @@ import Dashboard from "./layout/Dashboard";
 import FundamentoUseState from "./paginas/FundamentoUseState";
 import FundamentoUseEffect from "./paginas/FundamentoUseEffect";
 
+import NotFound from "./paginas/NotFound";
+
 function App() {
     return (
         <Routes>
@@ -17,6 +19,8 @@ function App() {
                 <Route path="/use-effect" element={<FundamentoUseEffect />} />
 
             </Route>
+
+            <Route path="*" element={<NotFound/>} />
 
         </Routes>
     );
